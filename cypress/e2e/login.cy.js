@@ -4,8 +4,12 @@ describe('OrangeHRM Login Test', () => {
     })
 
     it.only('Deve fazer o login com sucesso e acessar o Dashboard', () => {
-        cy.get('input[name="username"]').type('Admin');
-        cy.get('input[name="password"]').type('admin123');
+        
+        const user = 'Admin';
+        const password = 'admin123';
+
+        cy.get('input[name="username"]').type(user);
+        cy.get('input[name="password"]').type(password);
         cy.get('button[type="submit"]').click();
 
         cy.url().should('include', '/dashboard/index');

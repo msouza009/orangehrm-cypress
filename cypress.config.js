@@ -1,8 +1,12 @@
-const { defineConfig } = require("cypress");
+const { defineConfig } = require('cypress');
 
 module.exports = defineConfig({
   projectId: '71ov9i',
-  viewportHeight: 880,
   viewportWidth: 1280,
-  e2e: {},
-})
+  viewportHeight: 1000,
+  e2e: {
+    baseUrl: 'https://opensource-demo.orangehrmlive.com',
+    setupNodeEvents(on, config) {
+    },
+  },
+});
