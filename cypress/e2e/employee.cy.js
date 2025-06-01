@@ -10,7 +10,7 @@ describe('OrangeHRM Testes de funcionário', () => {
         cy.wait(1000);
         cy.get('.oxd-form-actions > .oxd-button--secondary').click();
         cy.wait(500);
-        cy.get('.oxd-table-body > :nth-child(1) > .oxd-table-row', { timeout: 10000 }).should('be.visible').click();
+        cy.get('.oxd-table-body > :nth-child(1) > .oxd-table-row').should('be.visible').click();
         cy.url().should('include', '/viewPersonalDetails');
         cy.get('.oxd-text--h6').should('contain', 'Personal Details');
         cy.wait(1000);
@@ -23,7 +23,7 @@ describe('OrangeHRM Testes de funcionário', () => {
         cy.wait(1000);
         cy.get('.oxd-form-actions > .oxd-button--secondary').click();
         cy.wait(500);
-        cy.get('.oxd-table-body > :nth-child(1) > .oxd-table-row', { timeout: 10000 }).should('be.visible').click();
+        cy.get('.oxd-table-body > :nth-child(1) > .oxd-table-row').should('be.visible').click();
         cy.url().should('include', '/viewPersonalDetails');
         cy.get('.oxd-text--h6').should('contain', 'Personal Details');
         cy.wait(1000);
@@ -36,7 +36,7 @@ describe('OrangeHRM Testes de funcionário', () => {
         cy.wait(1000);
         cy.get('.oxd-form-actions > .oxd-button--secondary').click();
         cy.wait(500);
-        cy.get('.oxd-table-body > :nth-child(1) > .oxd-table-row', { timeout: 10000 }).should('be.visible').click();
+        cy.get('.oxd-table-body > :nth-child(1) > .oxd-table-row').should('be.visible').click();
         cy.url().should('include', '/viewPersonalDetails');
         cy.get('.oxd-text--h6').should('contain', 'Personal Details');
         cy.wait(1000);
@@ -52,7 +52,7 @@ describe('OrangeHRM Testes de funcionário', () => {
         .click();
         cy.wait(500);
         cy.get('.oxd-form-actions > .oxd-button--secondary').click();
-        cy.get('.oxd-table-body > :nth-child(1) > .oxd-table-row', { timeout: 10000 }).should('be.visible').click();
+        cy.get('.oxd-table-body > :nth-child(1) > .oxd-table-row').should('be.visible').click();
         cy.url().should('include', '/viewPersonalDetails');
         cy.get('.oxd-text--h6').should('contain', 'Personal Details');
         cy.wait(1000);
@@ -68,7 +68,7 @@ describe('OrangeHRM Testes de funcionário', () => {
         .click();
         cy.wait(500);
         cy.get('.oxd-form-actions > .oxd-button--secondary').click();
-        cy.get('.oxd-table-body > :nth-child(1) > .oxd-table-row', { timeout: 10000 }).should('be.visible').click();
+        cy.get('.oxd-table-body > :nth-child(1) > .oxd-table-row').should('be.visible').click();
         cy.url().should('include', '/viewPersonalDetails');
         cy.get('.oxd-text--h6').should('contain', 'Personal Details');
         cy.wait(1000);
@@ -84,7 +84,7 @@ describe('OrangeHRM Testes de funcionário', () => {
         .click();
         cy.wait(500);
         cy.get('.oxd-form-actions > .oxd-button--secondary').click();
-        cy.get('.oxd-table-body > :nth-child(1) > .oxd-table-row', { timeout: 10000 }).should('be.visible').click();
+        cy.get('.oxd-table-body > :nth-child(1) > .oxd-table-row').should('be.visible').click();
         cy.url().should('include', '/viewPersonalDetails');
         cy.get('.oxd-text--h6').should('contain', 'Personal Details');
         cy.wait(1000);
@@ -100,7 +100,7 @@ describe('OrangeHRM Testes de funcionário', () => {
         .click();
         cy.wait(500);
         cy.get('.oxd-form-actions > .oxd-button--secondary').click();
-        cy.get('.oxd-table-body > :nth-child(1) > .oxd-table-row', { timeout: 10000 }).should('be.visible').click();
+        cy.get('.oxd-table-body > :nth-child(1) > .oxd-table-row').should('be.visible').click();
         cy.url().should('include', '/viewPersonalDetails');
         cy.get('.oxd-text--h6').should('contain', 'Personal Details');
         cy.wait(1000);
@@ -122,7 +122,7 @@ describe('OrangeHRM Testes de funcionário', () => {
         .click();
         cy.wait(500);
         cy.get('.oxd-form-actions > .oxd-button--secondary').click();
-        cy.get('.oxd-table-body > :nth-child(1) > .oxd-table-row', { timeout: 10000 }).should('be.visible').click();
+        cy.get('.oxd-table-body > :nth-child(1) > .oxd-table-row').should('be.visible').click();
         cy.url().should('include', '/viewPersonalDetails');
         cy.get('.oxd-text--h6').should('contain', 'Personal Details');
         cy.wait(1000);
