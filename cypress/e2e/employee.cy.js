@@ -6,7 +6,7 @@ describe('OrangeHRM Testes de funcionário', () => {
     it.only('Acessa o menu e busca um funcionário pelo nome', () => {
         cy.contains('PIM').click().should('be.visible');
         cy.contains('Employee Name')    
-        cy.get(':nth-child(1) > .oxd-input-group > :nth-child(2) > .oxd-autocomplete-wrapper > .oxd-autocomplete-text-input > input').should('be.visible').type('Alexandre')
+        cy.get(':nth-child(1) > .oxd-input-group > :nth-child(2) > .oxd-autocomplete-wrapper > .oxd-autocomplete-text-input > input').should('be.visible').type('Budi')
         cy.wait(1000);
         cy.get('.oxd-form-actions > .oxd-button--secondary').click();
         cy.wait(500);
