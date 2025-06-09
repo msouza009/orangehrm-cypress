@@ -6,7 +6,7 @@ describe('OrangeHRM Testes de funcionário', () => {
     it.only('Acessa o menu e busca um funcionário pelo nome', () => {
         cy.contains('PIM').click().should('be.visible');
         cy.contains('Employee Name')    
-        cy.get(':nth-child(1) > .oxd-input-group > :nth-child(2) > .oxd-autocomplete-wrapper > .oxd-autocomplete-text-input > input').should('be.visible').type('John')
+        cy.get(':nth-child(1) > .oxd-input-group > :nth-child(2) > .oxd-autocomplete-wrapper > .oxd-autocomplete-text-input > input').should('be.visible').type('Alexandre')
         cy.wait(1000);
         cy.get('.oxd-form-actions > .oxd-button--secondary').click();
         cy.wait(500);
@@ -19,7 +19,7 @@ describe('OrangeHRM Testes de funcionário', () => {
     it.only('Acessa o menu e busca um funcionário pelo nome completo', () => {
         cy.contains('PIM').click().should('be.visible');
         cy.contains('Employee Name')    
-        cy.get(':nth-child(1) > .oxd-input-group > :nth-child(2) > .oxd-autocomplete-wrapper > .oxd-autocomplete-text-input > input').should('be.visible').type('Max Verstappen')
+        cy.get(':nth-child(1) > .oxd-input-group > :nth-child(2) > .oxd-autocomplete-wrapper > .oxd-autocomplete-text-input > input').should('be.visible').type('Ernie Noah')
         cy.wait(1000);
         cy.get('.oxd-form-actions > .oxd-button--secondary').click();
         cy.wait(500);
@@ -32,7 +32,7 @@ describe('OrangeHRM Testes de funcionário', () => {
     it.only('Acessa o menu e busca um funcionário pelo ID', () => {
         cy.contains('PIM').click().should('be.visible');
         cy.contains('Employee Id')
-        cy.get(':nth-child(2) > .oxd-input').should('be.visible').type('761');
+        cy.get(':nth-child(2) > .oxd-input').should('be.visible').type('0403');
         cy.wait(1000);
         cy.get('.oxd-form-actions > .oxd-button--secondary').click();
         cy.wait(500);
@@ -47,8 +47,8 @@ describe('OrangeHRM Testes de funcionário', () => {
         cy.contains('Job Title')
         cy.get(':nth-child(6) > .oxd-input-group > :nth-child(2) > .oxd-select-wrapper > .oxd-select-text').click();
         cy.get('.oxd-select-dropdown')
-        .should('contain', 'QA Engineer')
-        .contains('QA Engineer')
+        .should('contain', 'HR Manager')
+        .contains('HR Manager')
         .click();
         cy.wait(500);
         cy.get('.oxd-form-actions > .oxd-button--secondary').click();
@@ -63,8 +63,8 @@ describe('OrangeHRM Testes de funcionário', () => {
         cy.contains('Employment Status')
         cy.get(':nth-child(3) > .oxd-input-group > :nth-child(2) > .oxd-select-wrapper > .oxd-select-text').click();
         cy.get('.oxd-select-dropdown')
-        .should('contain', 'Freelance')
-        .contains('Freelance')
+        .should('contain', 'Full-Time Permanent')
+        .contains('Full-Time Permanent')
         .click();
         cy.wait(500);
         cy.get('.oxd-form-actions > .oxd-button--secondary').click();
@@ -95,8 +95,8 @@ describe('OrangeHRM Testes de funcionário', () => {
         cy.contains('Supervisor Name')    
         cy.get(':nth-child(7) > .oxd-input-group > :nth-child(2) > .oxd-select-wrapper > .oxd-select-text').click();
         cy.get('.oxd-select-dropdown')
-        .should('contain', 'Administration')
-        .contains('Administration')
+        .should('contain', 'Human Resources')
+        .contains('Human Resources')
         .click();
         cy.wait(500);
         cy.get('.oxd-form-actions > .oxd-button--secondary').click();
@@ -111,8 +111,8 @@ describe('OrangeHRM Testes de funcionário', () => {
         cy.contains('Job Title')
         cy.get(':nth-child(6) > .oxd-input-group > :nth-child(2) > .oxd-select-wrapper > .oxd-select-text').click();
         cy.get('.oxd-select-dropdown')
-        .should('contain', 'Software Engineer')
-        .contains('Software Engineer')
+        .should('contain', '')
+        .contains('HR Manager')
         .click();
         cy.contains('Employment Status')
         cy.get(':nth-child(3) > .oxd-input-group > :nth-child(2) > .oxd-select-wrapper > .oxd-select-text').click();
